@@ -6,7 +6,7 @@ body {
     text-align: center; /*texto centralizado*/
 }
 header {
-    background-color: #28a745;
+    background-color: orange;
     color: white;
     padding: 15px 0px; /*15px (espaçamento interno acima e abaixo) e 0px (direita e esuqerda)*/
     font-size: 24px;
@@ -27,7 +27,7 @@ nav a { /* configura os links do menu */
     text-decoration: none; /* nao decora os links*/
     padding: 10px 15px;
     font-size: 18px;
-    background: blue;
+    background: orange;
     border-radius: 5px; /* cantos arredondados*/
 
 }
@@ -83,4 +83,9 @@ table {
 .cabecalho {
     background-color: navy;
     color: white;
+}
+.Destaque {
+    background-color: #007bff;
+    margin-top: 0px;
+    margin-bottom: auto;
 }
