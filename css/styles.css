@@ -48,6 +48,10 @@ img {
 h2 {
     text-align: center;
 }
+h4 {
+    text-align: center;
+    height: 1px;
+}
 
 ol li {
     padding-bottom: 10px;
@@ -60,4 +64,23 @@ table tr td {
 }
 table {
     margin: 0 auto; /* centraliza a tabela na pagina */
+}
+.laranja {
+    background-color: orange;
+}.preto {
+    background-color:black;
+    color: white;
+}
+.roxo {
+    background-color: purple;
+}
+.verde {
+    background-color: green;
+}
+.vermelho {
+    background-color: rgb(255, 28, 28);
+}
+.cabecalho {
+    background-color: navy;
+    color: white;
 }
