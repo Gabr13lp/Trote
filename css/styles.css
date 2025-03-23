@@ -48,6 +48,9 @@ img {
 h2 {
     text-align: center;
 }
+h3 {
+    text-align: center;
+}
 h4 {
     text-align: center;
     height: 1px;
@@ -72,20 +75,28 @@ table {
     color: white;
 }
 .roxo {
-    background-color: purple;
+    background-color: rgb(175, 109, 196);
 }
 .verde {
-    background-color: green;
+    background-color: rgb(60, 150, 60);
 }
 .vermelho {
-    background-color: rgb(255, 28, 28);
+    background-color: rgb(250, 66, 66);
 }
 .cabecalho {
     background-color: navy;
     color: white;
 }
 .Destaque {
-    background-color: #007bff;
-    margin-top: 0px;
-    margin-bottom: auto;
+    background-color: #9acbff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.destaque {
+    background-color: rgb(239, 245, 162);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#meio {
+    text-align: center;
 }
