@@ -1,19 +1,36 @@
 function calcular(){
     // vamos criar 2 variaveis
     // Js as variaveis nao possuem tipo
-    let mascote, homenagem, leite, kitAvulso, suplementoAvulso
+    let mascote, homenagem, leite, kit, suplemento, soma, equipe
     // recupera o valor do mascote digitado pelo usuario
-    mascote = document.getElementById("mascote").value
+    mascote = Number(document.getElementById("mascote").value)
     // recupera o valor da homenagem digitado pelo usuario
-    homenagem = document.getElementById("homenagem").value
+    homenagem = Number(document.getElementById("homenagem").value)
     // recupera a quanidade de  litros de leite
-    leite = document.getElementById("leite").value
+    leite = Number(document.getElementById("leite").value)
     // recuperar a quantidade avulsa de kits de alimentação
-    kitAvulso = document.getElementById("kitAvulso").value
+    kit = Number(document.getElementById("kit").value)
     // recuperar a quantidade avulsa de suplementos
-    suplementoAvulso = document.getElementById("suplementoAvulso").value
+    suplemento = Number(document.getElementById("suplemento").value)
     // calcular a soma
-    let soma = Number(mascote) + Number(homenagem) + (2*Number(leite)) + (30*Number(kitAvulso)) + (15*Number(suplementoAvulso))
+    soma = (mascote) + (homenagem) + (2*(leite))
+    //vamos calcular a pontuacao considerando metas de kit e supl.
+    equipe = document.getElementById("equipe").value
+    if (equipe == "laranja"){
+        if (kit>=97){
+            soma = soma + 5000 + ((kit-97) * 30)
+        }
+        else if (kit>=78){
+            soma = soma + 4000 + ((kit-78) * 30)
+        }
+        else if (kit>=49){
+            soma = soma + 2500 ((kit-49) * 30)
+        }
+        else if (kit>=19){
+            soma = soma + 1000 ((kit-19) * 30)
+        }
+    }
     //retorna o valor ao HTML
+    //template string
     document.getElementById("soma").innerHTML=`A soma é ${soma}`
 }
