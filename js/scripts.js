@@ -42,7 +42,8 @@ function calcular(){
             //verifica kit e suplemento
             //verifica sangue
             if ( sangue >= 52) {
-                soma = soma +
+                
+                
             }
     }
     else if (equipe == "roxa"){
