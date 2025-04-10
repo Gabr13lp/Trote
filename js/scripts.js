@@ -43,7 +43,6 @@ function calcular(){
             //verifica sangue
             if ( sangue >= 52) {
                 
-                
             }
     }
     else if (equipe == "roxa"){
